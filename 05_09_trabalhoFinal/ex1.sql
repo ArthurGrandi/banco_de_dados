@@ -38,9 +38,8 @@ CREATE TABLE PRODUTOS (
     IdProduto SERIAL PRIMARY KEY, -- Utilizando SERIAL para autoincremento
     Nome VARCHAR(50),
     Descricao VARCHAR(50),
-    Preco DECIMAL,
+    Preco DECIMAL (15, 2),
     Estoque VARCHAR(100),
-    IdItemPedido INTEGER
 );
 
 CREATE TABLE TRANSPORTADORAS (
@@ -58,7 +57,7 @@ CREATE TABLE TRANSPORTADORAS (
 
 CREATE TABLE ITENS_PEDIDOS (
     Tamanho VARCHAR(15),
-    Quantidade DECIMAL,
+    Quantidade DECIMAL(15, 2),
     IdItemPedido SERIAL PRIMARY KEY, -- Utilizando SERIAL para autoincremento
     IdPedido INTEGER,
     IdProduto INTEGER,
@@ -67,16 +66,16 @@ CREATE TABLE ITENS_PEDIDOS (
 );
 
 CREATE TABLE fornecem (
-    IdFornecedor INTEGER,
-    IdProduto INTEGER,
+    IdFornecedor INTEGER NOT NULL,
+    IdProduto INTEGER NOT NULL,
     PRIMARY KEY (IdFornecedor, IdProduto),
     FOREIGN KEY (IdFornecedor) REFERENCES FORNECEDORES(IdFornecedor) ON DELETE RESTRICT,
     FOREIGN KEY (IdProduto) REFERENCES PRODUTOS(IdProduto) ON DELETE SET NULL
 );
 
 CREATE TABLE entregam (
-    IdPedido INTEGER,
-    IdTransportadoras INTEGER,
+    IdPedido INTEGER NOT NULL,
+    IdTransportadoras INTEGERNOT NULL,
     PRIMARY KEY (IdPedido, IdTransportadoras),
     FOREIGN KEY (IdPedido) REFERENCES PEDIDOS(IdPedido) ON DELETE SET NULL,
     FOREIGN KEY (IdTransportadoras) REFERENCES TRANSPORTADORAS(IdTransportadoras) ON DELETE SET NULL
@@ -142,7 +141,7 @@ VALUES
 
 
 -- PRODUTOS
-INSERT INTO PRODUTOS (IdProduto, Nome, Descricao, Preco, Estoque, IdItemPedido)
+INSERT INTO PRODUTOS (IdProduto, Nome, Descricao, Preco, Estoque,)
 VALUES
     (1, 'Produto A', 'Descrição do Produto A', 10.50, '100 unidades', 1),
     (2, 'Produto B', 'Descrição do Produto B', 15.75, '75 unidades', 2),
@@ -181,7 +180,7 @@ VALUES
     ('Pequeno', 4, 7, 7, 7),
     ('Grande', 12, 8, 8, 8),
     ('Médio', 9, 9, 9, 9),
-    ('Pequeno', 6, 10, 10, 10
+    ('Pequeno', 6, 10, 10, 10)
 
 SELECT * FROM CLIENTES;
 
