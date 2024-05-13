@@ -1,3 +1,11 @@
+-- Na aula de hoje ampliaremos nosso conhecimento sobre consultas em BD.
+
+-- Os comandos de consulta (SELECT) foram classificados em dois grupos, de acordo com a construção da sua estrutura:
+
+-- Produto cartesiano: a cláusula WHERE é usada para definir os relacionamentos entre as tabelas e para criar filtros de seleção. Esquecer alguma condição na cláusula WHERE pode produzir erros sérios na consulta.
+
+-- Junções: os comandos JOIN (INNER, LEFT, RIGHT e FULL) são usados para construir a estrutura da consulta e a cláusula WHERE é usada apenas para filtros. Dessa forma, a leitura da consulta SELECT é mais semântica, ou seja, é possível entender melhor seu significado.
+
 -- CONSULTADNO APENAS UMA TABELA
 
 SELECT * 
