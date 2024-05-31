@@ -1,4 +1,5 @@
--03.RESERVA DE PASSAGENS AÉREAS-
+-- BD-I-ARTHUR-GRANDI-EX003-SQL-DDL.sql
+--03.RESERVA DE PASSAGENS AÉREAS- ARTHUR GRANDI E KENZO-RÁ
 
 -- Tabela para armazenar informações sobre os passageiros
 CREATE TABLE Passageiros (

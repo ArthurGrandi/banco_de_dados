@@ -1,4 +1,5 @@
--012.CLUBE DE DANÇAS DE SALÃO-
+-- BD-I-ARTHUR-GRANDI-EX012-SQL-DDL.sql
+--012.CLUBE DE DANÇAS DE SALÃO- ARTHUR GRANDI E KENZO-RÁ
 
 -- Tabela para armazenar informações sobre os instrutores
 CREATE TABLE Instrutores (

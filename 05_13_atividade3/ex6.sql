@@ -1,4 +1,5 @@
--06.DEPARTAMENTO DE VENDAS-
+-- BD-I-ARTHUR-GRANDI-EX006-SQL-DDL.sql
+--06.DEPARTAMENTO DE VENDAS- ARTHUR GRANDI E KENZO-RÁ
 
 -- Tabela para armazenar informações sobre as regiões de venda
 CREATE TABLE Regioes (

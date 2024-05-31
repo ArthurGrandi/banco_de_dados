@@ -1,4 +1,5 @@
--04.CONTROLE DE EMPRESTIMOS DE CDs-
+-- BD-I-ARTHUR-GRANDI-EX004-SQL-DDL.sql
+--04.CONTROLE DE EMPRESTIMOS DE CDs- ARTHUR GRANDI E KENZO-RÁ
 
 -- Tabela para armazenar informações sobre os artistas
 CREATE TABLE Artistas (

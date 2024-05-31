@@ -1,4 +1,5 @@
--016.UNIVERSIDADE-
+-- BD-I-ARTHUR-GRANDI-EX016-SQL-DDL.sql
+--016.UNIVERSIDADE- ARTHUR GRANDI E KENZO-RÁ
 
 -- Tabela para armazenar informações sobre os alunos
 CREATE TABLE Alunos (
